@@ -1,20 +1,55 @@
 <!DOCTYPE HTML>
 <HTML lan = "ES">
     <head>
+
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            </style>
+            
         <meta charset = "UTF-8"/>    <!--charset utf-8 para caracteres especiales-->>
         <meta name = "description" content = "">  <!--Tag para SEO en browsers-->
         <meta name = "robots" content = "index, follow">
         <title>WebSite</title>
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"> <!--fundamental para web Responsive-->
-        <link rel = "stylesheet" href = "./Css/style.css">  <!--enlace con hoja Css-->      
-    </head>
+        <link rel = "stylesheet" href = "./Css/style.css">  <!--enlace con hoja Css-->   <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+        <script type="text/javascript" src="scripts.js"></script>
 
+    </head>
+    
     <body>
         <header>
             <nav>
 
             </nav>
         </header>
+
+        <h1>Let´s do it Scrum Team</h1>
+        <input type="number" id="miId" placeholder="Id">
+        <input type="text" id="name" placeholder="Nombre">
+        <input type="number" id="price" placeholder="Precio">
+        <input type="text" id="description" placeholder="Descripción">
+
+        
+        <button onclick="registro()">Editar</button>
+
+        <button onclick="obtenerItems()">VER</button>
+        
+        <div>
+
+		    <table>
+			    <tbody id="miResultado">
+
+			    </tbody>
+		    </table>
+		
+	    </div>
+        
+<!--....----------------------------------------------------------..-->
 
         <main>
             <section>
@@ -46,11 +81,5 @@
 
 </HTML>
 
-<!--<img src="https://i.imgur.com/ZLWEEG4.jpg"> alivianar el peso del proyecto local-->
 
-<!--PNG 8 Portable network graphics > paleta de 256 colors, lossless, transparente para logotipos-->
-<!--PNG 24 > paleta de + 256 colors, lossless, fondo de color para logotipos-->
-<!--JPG > paleta de color ilimitado, lossy, fotografías-->
-<!--SVG - Vector > paleta de +256 colors, lossless, SVG autoescala la calidad a diferentes resoluciones-->
 
-<!--Tamaño ideal de imagen: 70KB > Mejorar tamaño: Tiny PNG, - Retirar metadatos de fotografías: Verefix-->
